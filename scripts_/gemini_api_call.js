@@ -16,7 +16,8 @@ export async function gemini_api_call(user_query) {
 
     });
    
-    const responseJson = JSON.stringify(response, null, 4);
+    console.log(response);
+    const responseJson = response.candidates[0].content.parts[0].text;
     return responseJson;
 }
 

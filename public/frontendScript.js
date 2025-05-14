@@ -17,15 +17,15 @@ btn.addEventListener('click', async () => {
           body: JSON.stringify({ userQuery }),
         });
 
-        if (!response.ok) {
-          geminiResponseContainer.textContent = response.status
-          throw new Error('Network response was not ok: ' + response.status);
-        }
+        // if (!response.ok) {
+        //   geminiResponseContainer.textContent = response.status
+        //   throw new Error('Network response was not ok: ' + response.status);
+        // }
 
         // Get the response text (or JSON if your server returns JSON)
-        const data = await response.json()
-        geminiResponseContainer.textContent = data
-        
+        const data = await response.text();
+        geminiResponseContainer.textContent = data;
+
       } catch (error) {
         console.error('Error during fetch:', error);
         alert('Error: ' + error.message);
