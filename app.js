@@ -28,8 +28,8 @@ app.post('/gemini', async (req, res) => {
         const response = await gemini_api_call(userQuery);
 
         // Send the response back to the client
-        console.log(response);
-        res.send(response); 
+        // console.log(response);
+        res.json(response); 
 
     } catch (error) {
         console.error('Error calling Gemini API:', error);
