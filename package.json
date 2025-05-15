@@ -4,6 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node app.js",
+    "build": "npm run start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,7 +17,8 @@
   "dependencies": {
     "@google/genai": "^0.13.0",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "gh-pages": "^6.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
