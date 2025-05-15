@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini is FREE!</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+    </style>
 </head>
+
 <body>
+    <div id="response">
+        <h1 id="welcome">Hi Ryan, need help on Midterm 2?</h1>
+        <p id="geminiResponse"></p>
+        <div id="padding"></div>
+    </div>
     <label for="userInput">
-    <textarea id="userInput" 
-    name="userInput" 
-    cols="33" rows="7" 
-    placeholder="write to Gemini ...."></textarea>
-    <button id="submit">Send to Gemini!</button>
-    <p id="geminiResponse"></p>
-    <script src="frontendScript.js"></script>
+        <div class="search">
+            <input id="userInput" type="text" placeholder="write to Gemini ...." />
+            <button id="submit">Send to Gemini!</button>
+        </div>
+        <script src="frontendScript.js"></script>
 </body>
+
 </html>
