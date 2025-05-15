@@ -1,1 +1,1 @@
-This website prompts the Gemini API and display the generated content.
+This website prompts the Gemini API and displays the generated content.
